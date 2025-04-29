@@ -3,7 +3,7 @@ import { links } from "@/lib/data";
 export type ProjectItemProps = {
   title: string;
   description: string;
-  tags: [];
+  tags: unknown[];
   imageUrl: string;
 };
 

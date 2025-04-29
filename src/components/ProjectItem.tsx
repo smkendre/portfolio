@@ -1,10 +1,12 @@
 "use client"
 import React, { useRef } from 'react'
-import {ProjectItemProps} from "@/lib/types"
 import Image from 'next/image'
 import { useScroll, motion, useTransform } from 'framer-motion'
+import { projectsData } from '@/lib/data'
 
-const ProjectItem = ({title, description, tags, imageUrl}: ProjectItemProps) => {
+type ProjectProps = (typeof projectsData)[number];
+
+const ProjectItem = ({title, description, tags, imageUrl}: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const {scrollYProgress} = useScroll({
     target: ref,
