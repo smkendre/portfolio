@@ -1,11 +1,10 @@
 "use client"
 import { useTheme } from '@/context/theme-context';
-import { themeType } from '@/lib/types';
-import React, { useState } from 'react'
+import React from 'react'
 import { BsMoon, BsSun } from 'react-icons/bs'
 
 const ThemeSwitch = () => {
-      const { theme, setTheme, handleThemeSwitch } = useTheme();
+      const { theme,  handleThemeSwitch } = useTheme();
   
 
   return (

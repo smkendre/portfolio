@@ -4,7 +4,6 @@ import Image2 from "../../public/image2.png";
 import Image3 from "../../public/image3.png";
 
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa6";
 import React from "react";
 
 export const links = [

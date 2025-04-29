@@ -4,7 +4,6 @@ import SectionHeading from './Heading'
 import { motion } from "framer-motion"
 import { useSectionInView } from '@/lib/hooks'
 import { skillsData } from '@/lib/data'
-import { tr } from 'framer-motion/client'
 
 const fadeInAnimationVariants = {
   initial: { opacity: 0, y: 100 },

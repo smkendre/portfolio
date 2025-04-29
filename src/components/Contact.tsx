@@ -4,7 +4,6 @@ import SectionHeading from './Heading'
 import { motion } from "framer-motion"
 import { useSectionInView } from '@/lib/hooks'
 import { FaPaperPlane } from 'react-icons/fa6'
-import { form } from 'framer-motion/client'
 import { sendEmail } from '@/actions/sendEmail'
 import { useFormStatus } from 'react-dom'
 import toast from 'react-hot-toast'
@@ -28,7 +27,7 @@ const Contact = () => {
       </p>
 
       <form className="mt-10 flex flex-col dark:text-black" action={async (formaData) => {
-        const {data, error} = await sendEmail(formaData);
+        const { error} = await sendEmail(formaData);
 
         if (error) {
           toast.error(error);

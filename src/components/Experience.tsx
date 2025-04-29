@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import SectionHeading from './Heading'
-import { motion } from "framer-motion"
 import { useSectionInView } from '@/lib/hooks'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import {  experiencesData } from '@/lib/data'
